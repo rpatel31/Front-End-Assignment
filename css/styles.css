@@ -1,0 +1,330 @@
+/* MOBILE AND GLOBAL STYLES */
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+ body {
+     line-height: 1;
+}
+ ol, ul {
+     list-style: none;
+}
+ blockquote, q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ body {
+     background: #ebf0f6;
+     color: #364e68;
+     font-family: 'Raleway', sans-serif;
+}
+/* end css reset*/
+ .grid {
+     display: flex;
+     flex-direction:column;
+}
+ #welcome,#about,#portfolio,#instagram{
+     display: flex;
+}
+ #welcome {
+     color: #d4dfec;
+}
+ h1{
+     font-size: 4em;
+     font-weight: bold;
+}
+ h2{
+     text-align: center;
+     margin-top: 1em;
+     margin-bottom: 1em;
+     font-size:2em;
+     font-weight: bold;
+}
+ nav{
+     background: -webkit-linear-gradient(bottom right, rgba(95, 70, 245, 0.9), rgba(37, 147, 198, 0.9));
+     box-shadow: 0px 15px 10px -15px #111;
+}
+ nav a{
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     color: #ebf0f6;
+}
+ .main-nav{
+     display: none;
+}
+ .main-nav a{
+     display: flex;
+     justify-content: center;
+}
+ .nav-toggle{
+     position: absolute;
+     top:0.625em;
+     right:1.25em;
+}
+ .active{
+     display: block;
+}
+ #welcome{
+     background: url(../images/developer.svg) no-repeat,-webkit-linear-gradient(bottom right, rgba(95, 70, 245, 0.9), rgba(37, 147, 198, 0.9));
+     background-position: center;
+     background-size: cover;
+     min-height: 70vh;
+     box-shadow: 0px 15px 10px -15px #111;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+ #about{
+     min-height: 50vh;
+     flex-direction: column;
+     align-items: center;
+}
+ .card{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     min-width: 0;
+     font-size: 1em;
+     width:90vw;
+     word-wrap: break-word;
+     margin-bottom: 3em;
+     align-items: center;
+     justify-content: center;
+}
+ .profile{
+     width:150px;
+     height:100%;
+}
+ .card p {
+     line-height: 1.8;
+     word-wrap: break-word;
+     text-align: justify
+}
+ #portfolio{
+     min-height: 100vh;
+     background:#E7EAEF;
+     flex-direction: column;
+     align-items: center;
+}
+ .image-container{
+     display: flex;
+     width: 70vw;
+     flex-wrap: wrap;
+     margin-top: auto;
+     margin-bottom: auto;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 3em;
+}
+ .image-container>img {
+     max-width:100%;
+     max-height:100%;
+     margin:5px;
+}
+/* The Modal (background) */
+ .modal {
+     display: none;
+    /* Hidden by default */
+     position: fixed;
+    /* Stay in place */
+     z-index: 1;
+    /* Sit on top */
+     padding-top: 100px;
+    /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+    /* Full width */
+     height: 100%;
+    /* Full height */
+     overflow: auto;
+    /* Enable scroll if needed */
+     background-color: rgb(0,0,0);
+    /* Fallback color */
+     background-color: rgba(0,0,0,0.9);
+    /* Black w/ opacity */
+}
+/* Modal Content (image) */
+ .modal-content {
+     margin: auto;
+     display: block;
+     width: 80%;
+     max-width: 700px;
+}
+/* Add Animation */
+ .modal-content{
+     -webkit-animation-name: zoom;
+     -webkit-animation-duration: 0.6s;
+     animation-name: zoom;
+     animation-duration: 0.6s;
+}
+ @-webkit-keyframes zoom {
+     from {
+         -webkit-transform:scale(0)
+    }
+     to {
+         -webkit-transform:scale(1)
+    }
+}
+ @keyframes zoom {
+     from {
+         transform:scale(0)
+    }
+     to {
+         transform:scale(1)
+    }
+}
+/* The Close Button */
+ .close {
+     position: absolute;
+     top: 40px;
+     right: 35px;
+     color: #f1f1f1;
+     font-size: 4em;
+     font-weight: bold;
+     transition: 0.3s;
+}
+ .close:hover, .close:focus {
+     color: #bbb;
+     text-decoration: none;
+     cursor: pointer;
+}
+ #instagram{
+     min-height: 100vh;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+/* TABLET STYLES */
+ @media screen and (min-width: 500px) {
+    /* applies to screens wider than 499px */
+     .nav-toggle{
+         display: none;
+    }
+     nav{
+         margin-bottom: 0;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         background: none;
+         border: none;
+         box-shadow: none;
+         align-items: center;
+         z-index: 1000;
+         -webkit-transition: all 0.5s ease;
+         transition: all 0.5s ease;
+    }
+     .main-nav{
+         display: flex;
+         justify-content: flex-end;
+         padding-right: 2em;
+    }
+     h2{
+         text-align: center;
+         margin-top: 2.5em;
+         font-size:2em;
+         font-weight: bold;
+    }
+     p {
+         padding:2em;
+    }
+     #portfolio{
+         min-height: 100vh;
+         background:#E7EAEF;
+         flex-direction: column;
+         align-items: center;
+    }
+     .image-container{
+         display: flex;
+         width: 80vw;
+         flex-wrap: wrap;
+         margin-top: auto;
+         margin-bottom: auto;
+         align-items: center;
+         justify-content: center;
+    }
+    .hover img:hover{
+       box-shadow:0 0 5px #111;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+     .image-container>img {
+         margin:2em;
+    }
+     #instafeed{
+         flex-direction: row;
+    }
+}
+/* DESKTOP STYLES */
+ @media screen and (min-width: 1000px) {
+    /* applies to screens wider than 999px */
+     #about{
+         background: url(../images/about_me.svg) no-repeat;
+         background-position: center;
+         background-size: auto;
+    }
+    #about p {
+      margin: 2em;
+    }
+     .card{
+         width:70vw;
+    }
+}
+ @media screen and (min-width: 1500px) {
+
+     .card{
+         width:50vw;
+    }
+
+
+}
+
+@media screen and (min-width: 1900px) {
+
+    .card{
+        width:50vw;
+   }
+   #about{
+       background: url(../images/about_me.svg) no-repeat;
+       background-position: center;
+       background-size: contain;
+  }
+  #about p {
+    margin: 2em;
+    font-size: 1.2em;
+  }
+
+  .image-container{
+
+      width:60vw;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+ }
+
+ #portfolio{
+       justify-content: center;
+ }
+
+
+}

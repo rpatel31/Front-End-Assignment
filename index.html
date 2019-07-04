@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>P-Number</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body class="grid">
+	<nav id="js-nav-color"> <span class="nav-toggle" id="nav-toggle-js">
+      <i class="fas fa-bars"></i>
+    </span>
+		<div class="main-nav" id="nav-js"> <a href="#welcome">Welcome</a>
+			<a href="#about">About</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#instagram">Instagram</a>
+		</div>
+	</nav>
+	<section id="welcome">
+		<h1>Hi! I'm Ritz</h1>
+		<p>Design Develop Create</p>
+	</section>
+	<section id="about">
+		<h2 class="about-title">About Me</h2>
+		<div class="card">
+			<div>
+				<img class="profile" src="images/profile.svg" alt="me!">
+			</div>
+			<p class="about-me">Hi! im a final year computer science student at De Montfort University, Leicester. This web page is an assignment for a front end Development module. I have a keen interest in front end web technologies such as HTML5,CSS3 and javascript. Below is some work ive created using the bootstrap framework. Click on an portfolio image to see a bigger picture of the site. This is the best module ever created.</p>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<div class="image-container hover">
+			<img id="portfolio_news" class="portfolio" src="images/adopt.PNG" alt="news site preview">
+			<img id="portfolio_photo" class="portfolio" src="images/photo.png" alt="photo site preview">
+			<img id="portfolio_meet" class="portfolio" src="images/meet.png" alt="meet site preview">
+			<img id="portfolio_adoptly" class="portfolio" src="images/adoptly.png" alt="adoptly site preview">
+			<img id="portfolio_pocketbook" class="portfolio" src="images/pocketbook.png" alt="pocketbook site preview">
+			<img id="portfolio_bass" class="portfolio" src="images/bass.png" alt="music site preview">
+		</div>
+		<div id="myModal" class="modal"> <span class="close">&times;</span>
+			<img class="modal-content" id="img01" src="" alt="enlarged_image">
+		</div>
+	</section>
+	<section id="instagram">
+		<h2>Instagram</h2>
+		<div class="image-container" id="instafeed"></div>
+	</section>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
